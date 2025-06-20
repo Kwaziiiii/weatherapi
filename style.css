@@ -1,0 +1,132 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #fffde7);
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+/* Input Field */
+input {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 300px;
+    max-width: 90%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Submit Button */
+button {
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffd180; /* pastel orange */
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #ffcc80;
+}
+
+/* Error Message */
+#error {
+    color: #e57373; /* soft red */
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* City Title */
+#city {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #4fc3f7; /* pastel blue */
+}
+
+/* Weather Results */
+#weather {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Each Weather Block */
+.weather_description {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    width: fit-content;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Capital Cards Scroll Container */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+}
+
+/* Individual Capital Weather Card */
+.capital-card {
+    min-width: 250px;
+    background: #fff3e0; /* pastel yellow-orange */
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    color: #333;
+}
+
+.capital-card h4 {
+    margin-bottom: 0.5rem;
+    color: #4fc3f7;
+}
+
+/* Calendar Grid */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Each Calendar Event */
+.calendar-event {
+    background: #e1f5fe; /* very light pastel blue */
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Form Wrapper (optional) */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
